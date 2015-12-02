@@ -1,0 +1,34 @@
+body {
+  background-color: #212121;
+
+}
+
+/*.css-navigation {
+  background-color: transparent;
+  color: white;
+}*/
+
+.css-main-picture {
+  background: url('../images/website-trail.jpg');
+  background-size: cover;
+  height: 600px;
+}
+
+.css-main-title,
+.title {
+  color: #60C8AD;
+  text-shadow: .5px 0 0 #000, -.5px 0 0 #000, 0 .5px 0 #000, 0 -.5px 0 #000, .5px .5px #000, -.5px -.5px 0 #000, .5px -.5px 0 #000, -.5px .5px 0 #000;
+}
+
+.css-view-button  {
+  color: #60C8AD !important;
+  border: 1px solid #60C8AD !important;
+}
+.css-view-button:hover {
+  color: white !important;
+  background-color: #60C8AD !important;
+}
+
+.paragraph {
+  color: white;
+}
