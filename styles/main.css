@@ -3,32 +3,105 @@ body {
 
 }
 
-/*.css-navigation {
-  background-color: transparent;
-  color: white;
-}*/
+.css-navigation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(33, 33, 33, .5) !important;
 
-.css-main-picture {
-  background: url('../images/website-trail.jpg');
-  background-size: cover;
-  height: 600px;
+  z-index: 3;
 }
 
-.css-main-title,
-.title {
+.css-navigation-left,
+.css-navigation-right,
+#connect,
+#port,
+#aboutMe {
+  background-color: rgba(33, 33, 33, 0) !important;
+  color: white;
+  font-size: 25px;
+  font-weight: 100;
+
+
+}
+
+.css-main-picture {
+  background: url('../images/website-trail.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+}
+
+.css-headline {
+  position: relative;
+  top: 75px;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {top: -100% }
+  to {top: 22%; }
+}
+
+.css-main-title {
   color: #60C8AD;
   text-shadow: .5px 0 0 #000, -.5px 0 0 #000, 0 .5px 0 #000, 0 -.5px 0 #000, .5px .5px #000, -.5px -.5px 0 #000, .5px -.5px 0 #000, -.5px .5px 0 #000;
+  font-weight: 800 !important;
+}
+
+.title {
+  color: #60C8AD;
+  font-weight: 200 !important;
 }
 
 .css-view-button  {
   color: #60C8AD !important;
   border: 1px solid #60C8AD !important;
+  font-weight: 400;
 }
 .css-view-button:hover {
   color: white !important;
   background-color: #60C8AD !important;
 }
 
+.css-link-button {
+  color: #60C8AD !important;
+  border: none !important;
+}
+.css-link-button:hover {
+  color: white !important;
+  background-color: #60C8AD !important;
+  /*transition-timing-function: ease-in(500ms);*/
+}
 .paragraph {
   color: white;
+}
+
+.portfolio_box {
+    position: relative;
+}
+
+.portfolio_description {
+  position: absolute;
+  color: white;
+  top: 80px;
+  background-color: rgba(96, 200, 173, 1);
+  opacity: 0;
+  height: 80%;
+  border-radius: 5%;
+  padding: 5px;
+  border-radius: 5%;
+  right: 5px;
+  left: 5px;
+  transition: all .5s ease;
+}
+
+.portfolio_description:hover {
+  /*transition-delay: .25s;*/
+  opacity: 1
+}
+
+.thumbnail {
+  margin-bottom: 25px !important;
 }
