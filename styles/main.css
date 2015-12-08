@@ -41,7 +41,7 @@ body {
 
 @keyframes slidein {
   from {top: -100% }
-  to {top: 22%; }
+  to {top: 13%; }
 }
 
 .css-main-title {
